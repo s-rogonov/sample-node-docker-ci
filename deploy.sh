@@ -8,5 +8,5 @@ docker stop web || true
 docker rm web || true
 docker rmi sr9000/sample-node:current || true
 docker tag sr9000/sample-node:latest sr9000/sample-node:current
-docker run -d --net app --restart always --name web -p 80:80 sr9000/sample-node:current
+docker run -d --restart always --name web -p 80:80 sr9000/sample-node:current
 EOF
