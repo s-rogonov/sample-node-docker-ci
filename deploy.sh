@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo docker build -t sr9000/sample-node .
+# sudo docker build -t sr9000/sample-node .
 sudo docker push sr9000/sample-node
 
 ssh -i key sr9000@35.187.48.193 << EOF
